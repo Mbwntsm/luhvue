@@ -19,7 +19,7 @@ app.use(express.json())
 // app.use(cors({origin:ENV.CLIENT_URL,credentials:true}))
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Your Vite dev server URL
+  origin: 'ENV.CLIENT_URL', // Your Vite dev server URL
   credentials: true
 }));
 
@@ -69,5 +69,6 @@ const startServer = async() =>{
     console.log("unable to connect to db");
   }
 };
+
 
 startServer();
