@@ -19,7 +19,7 @@ app.use(express.json())
 // app.use(cors({origin:ENV.CLIENT_URL,credentials:true}))
 
 app.use(cors({
-  origin: 'ENV.CLIENT_URL', // Your Vite dev server URL
+  origin:ENV.CLIENT_URL, // Your Vite dev server URL
   credentials: true
 }));
 
@@ -72,3 +72,4 @@ const startServer = async() =>{
 
 
 startServer();
+
